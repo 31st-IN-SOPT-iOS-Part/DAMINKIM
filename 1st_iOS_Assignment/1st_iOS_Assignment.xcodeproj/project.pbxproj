@@ -16,6 +16,9 @@
 		E7AB517928EE861C001CA1C6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB517828EE861C001CA1C6 /* FirstViewController.swift */; };
 		E7AB517B28EE8638001CA1C6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB517A28EE8638001CA1C6 /* SecondViewController.swift */; };
 		E7AB517E28EE879C001CA1C6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E7AB517D28EE879C001CA1C6 /* SnapKit */; };
+		E7AB518328EE9D47001CA1C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB518228EE9D47001CA1C6 /* LoginViewController.swift */; };
+		E7AB518528EE9D5C001CA1C6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB518428EE9D5C001CA1C6 /* SignUpViewController.swift */; };
+		E7AB518728EE9DC6001CA1C6 /* WelcomeMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB518628EE9DC6001CA1C6 /* WelcomeMessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		E7AB517228EE83DF001CA1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7AB517828EE861C001CA1C6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		E7AB517A28EE8638001CA1C6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E7AB518228EE9D47001CA1C6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E7AB518428EE9D5C001CA1C6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E7AB518628EE9DC6001CA1C6 /* WelcomeMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +70,34 @@
 			children = (
 				E7AB516428EE83DD001CA1C6 /* AppDelegate.swift */,
 				E7AB516628EE83DD001CA1C6 /* SceneDelegate.swift */,
-				E7AB517A28EE8638001CA1C6 /* SecondViewController.swift */,
-				E7AB517828EE861C001CA1C6 /* FirstViewController.swift */,
-				E7AB516828EE83DD001CA1C6 /* ViewController.swift */,
-				E7AB516A28EE83DD001CA1C6 /* Main.storyboard */,
 				E7AB516D28EE83DF001CA1C6 /* Assets.xcassets */,
-				E7AB516F28EE83DF001CA1C6 /* LaunchScreen.storyboard */,
+				E7AB518028EE9C11001CA1C6 /* Seminar */,
+				E7AB518128EE9C3A001CA1C6 /* Stroyboard */,
 				E7AB517228EE83DF001CA1C6 /* Info.plist */,
+				E7AB518228EE9D47001CA1C6 /* LoginViewController.swift */,
+				E7AB518428EE9D5C001CA1C6 /* SignUpViewController.swift */,
+				E7AB518628EE9DC6001CA1C6 /* WelcomeMessageViewController.swift */,
 			);
 			path = 1st_iOS_Assignment;
+			sourceTree = "<group>";
+		};
+		E7AB518028EE9C11001CA1C6 /* Seminar */ = {
+			isa = PBXGroup;
+			children = (
+				E7AB517828EE861C001CA1C6 /* FirstViewController.swift */,
+				E7AB517A28EE8638001CA1C6 /* SecondViewController.swift */,
+				E7AB516828EE83DD001CA1C6 /* ViewController.swift */,
+			);
+			path = Seminar;
+			sourceTree = "<group>";
+		};
+		E7AB518128EE9C3A001CA1C6 /* Stroyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E7AB516F28EE83DF001CA1C6 /* LaunchScreen.storyboard */,
+				E7AB516A28EE83DD001CA1C6 /* Main.storyboard */,
+			);
+			path = Stroyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7AB518328EE9D47001CA1C6 /* LoginViewController.swift in Sources */,
+				E7AB518728EE9DC6001CA1C6 /* WelcomeMessageViewController.swift in Sources */,
+				E7AB518528EE9D5C001CA1C6 /* SignUpViewController.swift in Sources */,
 				E7AB516928EE83DD001CA1C6 /* ViewController.swift in Sources */,
 				E7AB516528EE83DD001CA1C6 /* AppDelegate.swift in Sources */,
 				E7AB516728EE83DD001CA1C6 /* SceneDelegate.swift in Sources */,

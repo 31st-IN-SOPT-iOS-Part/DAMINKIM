@@ -22,10 +22,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
             let window = UIWindow(windowScene: windowScene)
             window.overrideUserInterfaceStyle = UIUserInterfaceStyle.light
-            // 첫번째 과제확인용 rootVC
+            // 첫번째 과제확인용
 //            let rootVC = ViewController()
-            
-            let rootVC = FirstViewController()
+            // 세미나 코드 확인용
+//            let rootVC = FirstViewController()
+            // 기본 과제 확인용
+            let rootVC = LoginViewController()
             let navigationController = UINavigationController(rootViewController: rootVC)
             
             window.rootViewController = navigationController

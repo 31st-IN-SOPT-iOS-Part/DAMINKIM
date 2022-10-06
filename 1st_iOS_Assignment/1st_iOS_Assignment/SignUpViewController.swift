@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  SignUpViewController.swift
 //  1st_iOS_Assignment
 //
 //  Created by 김담인 on 2022/10/06.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

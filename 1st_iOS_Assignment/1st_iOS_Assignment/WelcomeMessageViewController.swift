@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  WelcomeMessageViewController.swift
 //  1st_iOS_Assignment
 //
 //  Created by 김담인 on 2022/10/06.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class WelcomeMessageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
