@@ -19,6 +19,9 @@
 		E7AB518328EE9D47001CA1C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB518228EE9D47001CA1C6 /* LoginViewController.swift */; };
 		E7AB518528EE9D5C001CA1C6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB518428EE9D5C001CA1C6 /* SignUpViewController.swift */; };
 		E7AB518728EE9DC6001CA1C6 /* WelcomeMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB518628EE9DC6001CA1C6 /* WelcomeMessageViewController.swift */; };
+		E7AB518B28EF2308001CA1C6 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB518A28EF2308001CA1C6 /* UIView+.swift */; };
+		E7AB518D28EF3780001CA1C6 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB518C28EF3780001CA1C6 /* Preview.swift */; };
+		E7AB518F28EF3848001CA1C6 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB518E28EF3848001CA1C6 /* UIViewController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		E7AB518228EE9D47001CA1C6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E7AB518428EE9D5C001CA1C6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E7AB518628EE9DC6001CA1C6 /* WelcomeMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageViewController.swift; sourceTree = "<group>"; };
+		E7AB518A28EF2308001CA1C6 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		E7AB518C28EF3780001CA1C6 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		E7AB518E28EF3848001CA1C6 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,10 +55,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E72EB1FB28F025EB001989FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E7AB516D28EE83DF001CA1C6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E72EB1FC28F02614001989FB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E7AB516428EE83DD001CA1C6 /* AppDelegate.swift */,
+				E7AB516628EE83DD001CA1C6 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E72EB1FD28F02640001989FB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E7AB518028EE9C11001CA1C6 /* Seminar */,
+				E7AB516F28EE83DF001CA1C6 /* LaunchScreen.storyboard */,
+				E7AB518228EE9D47001CA1C6 /* LoginViewController.swift */,
+				E7AB518428EE9D5C001CA1C6 /* SignUpViewController.swift */,
+				E7AB518628EE9DC6001CA1C6 /* WelcomeMessageViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E72EB1FE28F026D7001989FB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E7AB518C28EF3780001CA1C6 /* Preview.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		E7AB515828EE83DD001CA1C6 = {
 			isa = PBXGroup;
 			children = (
 				E7AB516328EE83DD001CA1C6 /* 1st_iOS_Assignment */,
+				E72EB1FC28F02614001989FB /* Application */,
 				E7AB516228EE83DD001CA1C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,15 +112,12 @@
 		E7AB516328EE83DD001CA1C6 /* 1st_iOS_Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				E7AB516428EE83DD001CA1C6 /* AppDelegate.swift */,
-				E7AB516628EE83DD001CA1C6 /* SceneDelegate.swift */,
-				E7AB516D28EE83DF001CA1C6 /* Assets.xcassets */,
-				E7AB518028EE9C11001CA1C6 /* Seminar */,
-				E7AB518128EE9C3A001CA1C6 /* Stroyboard */,
 				E7AB517228EE83DF001CA1C6 /* Info.plist */,
-				E7AB518228EE9D47001CA1C6 /* LoginViewController.swift */,
-				E7AB518428EE9D5C001CA1C6 /* SignUpViewController.swift */,
-				E7AB518628EE9DC6001CA1C6 /* WelcomeMessageViewController.swift */,
+				E7AB518828EF223F001CA1C6 /* Global */,
+				E72EB1FB28F025EB001989FB /* Resources */,
+				E72EB1FE28F026D7001989FB /* Sources */,
+				E72EB1FD28F02640001989FB /* Scenes */,
+				E7AB518128EE9C3A001CA1C6 /* Stroyboard */,
 			);
 			path = 1st_iOS_Assignment;
 			sourceTree = "<group>";
@@ -94,10 +135,26 @@
 		E7AB518128EE9C3A001CA1C6 /* Stroyboard */ = {
 			isa = PBXGroup;
 			children = (
-				E7AB516F28EE83DF001CA1C6 /* LaunchScreen.storyboard */,
 				E7AB516A28EE83DD001CA1C6 /* Main.storyboard */,
 			);
 			path = Stroyboard;
+			sourceTree = "<group>";
+		};
+		E7AB518828EF223F001CA1C6 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				E7AB518928EF2291001CA1C6 /* Extensions */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		E7AB518928EF2291001CA1C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E7AB518A28EF2308001CA1C6 /* UIView+.swift */,
+				E7AB518E28EF3848001CA1C6 /* UIViewController+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,10 +236,13 @@
 			files = (
 				E7AB518328EE9D47001CA1C6 /* LoginViewController.swift in Sources */,
 				E7AB518728EE9DC6001CA1C6 /* WelcomeMessageViewController.swift in Sources */,
+				E7AB518D28EF3780001CA1C6 /* Preview.swift in Sources */,
 				E7AB518528EE9D5C001CA1C6 /* SignUpViewController.swift in Sources */,
 				E7AB516928EE83DD001CA1C6 /* ViewController.swift in Sources */,
 				E7AB516528EE83DD001CA1C6 /* AppDelegate.swift in Sources */,
 				E7AB516728EE83DD001CA1C6 /* SceneDelegate.swift in Sources */,
+				E7AB518B28EF2308001CA1C6 /* UIView+.swift in Sources */,
+				E7AB518F28EF3848001CA1C6 /* UIViewController+.swift in Sources */,
 				E7AB517B28EE8638001CA1C6 /* SecondViewController.swift in Sources */,
 				E7AB517928EE861C001CA1C6 /* FirstViewController.swift in Sources */,
 			);
