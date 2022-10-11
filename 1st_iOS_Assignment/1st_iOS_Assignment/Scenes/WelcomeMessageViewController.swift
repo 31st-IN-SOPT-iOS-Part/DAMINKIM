@@ -9,14 +9,13 @@ import UIKit
 import SnapKit
 
 
-class WelcomeMessageViewController: UIViewController {
+class WelcomeMessageViewController: UIViewController, SignUpViewContollerDelegate {
     
     // MARK: - Properties
     var userID: String?
     
     private let welcomeUserName: UILabel = {
         let label = UILabel()
-        label.text = "유저네임"
         label.textColor = .black
         label.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         label.textAlignment = .center
@@ -46,12 +45,16 @@ class WelcomeMessageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        dataSend(userName: userID ?? "고객")
+//        dataSend(userName: userID ?? "고객")
         setLayout()
     }
-
-   func dataSend(userName: String) {
-       welcomeUserName.text = "\(userName)님"
+    
+    func sendId(_ id: String) {
+        self.userID = id
+    }
+    
+   func dataSend() {
+       welcomeUserName.text = userID
    }
     
     @objc func backToRootView() {

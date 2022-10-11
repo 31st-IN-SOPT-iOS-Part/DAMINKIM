@@ -8,7 +8,14 @@
 import UIKit
 import SnapKit
 
+
+protocol SignUpViewContollerDelegate {
+    func sendId(_ id: String)
+}
+
 class SignUpViewController: UIViewController {
+    
+    var delegate: SignUpViewContollerDelegate?
     
     // MARK: - Properties    
     private let headerTitle : UILabel = {
@@ -92,6 +99,8 @@ class SignUpViewController: UIViewController {
         let welcomeVC = WelcomeMessageViewController()
         welcomeVC.modalPresentationStyle = .fullScreen
         welcomeVC.userID = idTextField.text
+        welcomeVC.dataSend()
+        self.delegate = welcomeVC
         self.present(welcomeVC, animated: true, completion: nil)
     }
     

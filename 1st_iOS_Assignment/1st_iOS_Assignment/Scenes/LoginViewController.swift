@@ -11,7 +11,7 @@ import SnapKit
 final class LoginViewController: UIViewController {
     
     // MARK: - Properties
-    private let headerTitle : UILabel = {
+    private let headerTitle: UILabel = {
         let label = UILabel()
         label.text = "카카오톡을 시작합니다"
         label.textColor = .black
@@ -20,7 +20,7 @@ final class LoginViewController: UIViewController {
         return label
     }()
     
-    private let headerFirstLabel : UILabel = {
+    private let headerFirstLabel: UILabel = {
         let label = UILabel()
         label.text = "사용하던 카카오 계정이 있다면"
         label.textColor = .systemGray
@@ -29,7 +29,7 @@ final class LoginViewController: UIViewController {
         return label
     }()
     
-    private let headerSecondLabel : UILabel = {
+    private let headerSecondLabel: UILabel = {
         let label = UILabel()
         label.text = "이메일 또는 전화번호로 로그인해 주세요."
         label.textColor = .systemGray
@@ -38,7 +38,7 @@ final class LoginViewController: UIViewController {
         return label
     }()
     
-    private let idTextField :UITextField = {
+    private let idTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "이메일 또는 전화번호"
         textField.addTarget(self, action: #selector(idEditingDidBegin), for: .editingDidBegin)
@@ -47,7 +47,7 @@ final class LoginViewController: UIViewController {
         return textField
     }()
     
-    private let passwordTextField :UITextField = {
+    private let passwordTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "비밀번호"
         textField.isSecureTextEntry = true
@@ -117,6 +117,7 @@ final class LoginViewController: UIViewController {
         let welcomeVC = WelcomeMessageViewController()
         welcomeVC.modalPresentationStyle = .fullScreen
         welcomeVC.userID = idTextField.text
+        welcomeVC.dataSend()
         self.present(welcomeVC, animated: true, completion: nil)
     }
     
@@ -146,7 +147,6 @@ final class LoginViewController: UIViewController {
     }
 }
 
-
 // MARK: - Layout
 extension LoginViewController {
     private func resetTextField() {
@@ -163,59 +163,59 @@ extension LoginViewController {
         
         // Header
         headerTitle.snp.makeConstraints {
-            $0.top.left.right.equalTo(view.safeAreaLayoutGuide).inset(60)
+            $0.top.trailing.leading.equalTo(view.safeAreaLayoutGuide).inset(60)
             $0.height.equalTo(57)
         }
         
         headerFirstLabel.snp.makeConstraints {
             $0.top.equalTo(headerTitle.snp.bottom).offset(15)
-            $0.left.right.equalTo(view.safeAreaLayoutGuide).inset(20)
+            $0.leading.trailing.equalTo(view.safeAreaLayoutGuide).inset(20)
         }
         
         headerSecondLabel.snp.makeConstraints {
             $0.top.equalTo(headerFirstLabel.snp.bottom).offset(5)
-            $0.left.right.equalTo(view.safeAreaLayoutGuide)
+            $0.leading.trailing.equalTo(view.safeAreaLayoutGuide)
         }
         
         // Input Area
         idTextField.snp.makeConstraints {
             $0.top.equalTo(headerSecondLabel.snp.bottom).offset(60)
-            $0.left.right.equalTo(view.safeAreaLayoutGuide).inset(15)
+            $0.leading.trailing.equalTo(view.safeAreaLayoutGuide).inset(15)
         }
         
         idUnderlineVIew.snp.makeConstraints {
             $0.top.equalTo(idTextField.snp.bottom).offset(10)
-            $0.left.right.equalTo(view.safeAreaLayoutGuide).inset(15)
+            $0.leading.trailing.equalTo(view.safeAreaLayoutGuide).inset(15)
             $0.height.equalTo(1)
         }
         
         passwordTextField.snp.makeConstraints {
             $0.top.equalTo(idUnderlineVIew.snp.bottom).offset(20)
-            $0.left.right.equalTo(view.safeAreaLayoutGuide).inset(15)
+            $0.leading.trailing.equalTo(view.safeAreaLayoutGuide).inset(15)
         }
         
         passwordUnderlineVIew.snp.makeConstraints {
             $0.top.equalTo(passwordTextField.snp.bottom).offset(10)
-            $0.left.right.equalTo(view.safeAreaLayoutGuide).inset(10)
+            $0.leading.trailing.equalTo(view.safeAreaLayoutGuide).inset(10)
             $0.height.equalTo(1)
         }
         
         // Bottom Button
         loginButton.snp.makeConstraints {
             $0.top.equalTo(passwordUnderlineVIew.snp.bottom).offset(30)
-            $0.left.right.equalTo(view.safeAreaLayoutGuide).inset(15)
+            $0.leading.trailing.equalTo(view.safeAreaLayoutGuide).inset(15)
             $0.height.equalTo(40)
         }
         
         signUpButton.snp.makeConstraints {
             $0.top.equalTo(loginButton.snp.bottom).offset(10)
-            $0.left.right.equalTo(view.safeAreaLayoutGuide).inset(15)
+            $0.leading.trailing.equalTo(view.safeAreaLayoutGuide).inset(15)
             $0.height.equalTo(40)
         }
         
         findAccontInfo.snp.makeConstraints {
             $0.top.equalTo(signUpButton.snp.bottom).offset(10)
-            $0.left.right.equalTo(view.safeAreaLayoutGuide)
+            $0.leading.trailing.equalTo(view.safeAreaLayoutGuide)
         }
         
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E72EB20028F03459001989FB /* BoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EB1FF28F03459001989FB /* BoundsViewController.swift */; };
 		E7AB516528EE83DD001CA1C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB516428EE83DD001CA1C6 /* AppDelegate.swift */; };
 		E7AB516728EE83DD001CA1C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB516628EE83DD001CA1C6 /* SceneDelegate.swift */; };
 		E7AB516928EE83DD001CA1C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB516828EE83DD001CA1C6 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E72EB1FF28F03459001989FB /* BoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundsViewController.swift; sourceTree = "<group>"; };
 		E7AB516128EE83DD001CA1C6 /* 1st_iOS_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1st_iOS_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AB516428EE83DD001CA1C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7AB516628EE83DD001CA1C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				E7AB517828EE861C001CA1C6 /* FirstViewController.swift */,
 				E7AB517A28EE8638001CA1C6 /* SecondViewController.swift */,
 				E7AB516828EE83DD001CA1C6 /* ViewController.swift */,
+				E72EB1FF28F03459001989FB /* BoundsViewController.swift */,
 			);
 			path = Seminar;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				E7AB516928EE83DD001CA1C6 /* ViewController.swift in Sources */,
 				E7AB516528EE83DD001CA1C6 /* AppDelegate.swift in Sources */,
 				E7AB516728EE83DD001CA1C6 /* SceneDelegate.swift in Sources */,
+				E72EB20028F03459001989FB /* BoundsViewController.swift in Sources */,
 				E7AB518B28EF2308001CA1C6 /* UIView+.swift in Sources */,
 				E7AB518F28EF3848001CA1C6 /* UIViewController+.swift in Sources */,
 				E7AB517B28EE8638001CA1C6 /* SecondViewController.swift in Sources */,
