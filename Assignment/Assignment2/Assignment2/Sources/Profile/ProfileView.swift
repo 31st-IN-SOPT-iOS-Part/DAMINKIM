@@ -19,7 +19,7 @@ final class ProfileView: BaseView {
     }
     
     lazy var profileImageButton = UIButton().then {
-        $0.setImage(UIImage(named: ProfileModel.myProfileImageTitle), for: .normal)
+        $0.setBackgroundImage(UIImage(named: ProfileModel.myProfileImageTitle), for: .normal)
         $0.contentMode = .scaleAspectFit
     }
     
@@ -34,7 +34,6 @@ final class ProfileView: BaseView {
     }
     
     private let profileButtonStackView = UIStackView().then {
-        $0.translatesAutoresizingMaskIntoConstraints = false
         $0.axis = .horizontal
         $0.alignment = .fill
         $0.distribution = .fillEqually
