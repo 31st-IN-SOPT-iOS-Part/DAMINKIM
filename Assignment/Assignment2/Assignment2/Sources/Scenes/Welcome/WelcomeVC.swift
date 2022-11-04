@@ -36,7 +36,7 @@ final class WelcomeVC: BaseVC {
     }
     
     @objc func pushToFriendListVC() {
-        let rootVC = FriendListVC()
+        let rootVC = KakaoTabbarController()
         let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
         sceneDelegate.window?.rootViewController = rootVC
         self.navigationController?.pushViewController(rootVC, animated: true)

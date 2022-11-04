@@ -32,6 +32,12 @@
 		E7579C3B28F877D5002CAB3E /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7579C3A28F877D5002CAB3E /* ProfileModel.swift */; };
 		E7579C3D28F8F73E002CAB3E /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7579C3C28F8F73E002CAB3E /* UIImage+.swift */; };
 		E7579C3F28F90D93002CAB3E /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7579C3E28F90D93002CAB3E /* UIButton+.swift */; };
+		E77A6BC929141663009DC36B /* KakaoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BC829141663009DC36B /* KakaoTabBarController.swift */; };
+		E77A6BCB2914194E009DC36B /* PhotoGridVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BCA2914194E009DC36B /* PhotoGridVC.swift */; };
+		E77A6BCD29141981009DC36B /* SharpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BCC29141981009DC36B /* SharpVC.swift */; };
+		E77A6BCF291419D7009DC36B /* ShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BCE291419D7009DC36B /* ShopVC.swift */; };
+		E77A6BD1291419EC009DC36B /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BD0291419EC009DC36B /* MoreVC.swift */; };
+		E77A6BD329147960009DC36B /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BD229147960009DC36B /* FriendTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +66,12 @@
 		E7579C3A28F877D5002CAB3E /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		E7579C3C28F8F73E002CAB3E /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		E7579C3E28F90D93002CAB3E /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		E77A6BC829141663009DC36B /* KakaoTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTabBarController.swift; sourceTree = "<group>"; };
+		E77A6BCA2914194E009DC36B /* PhotoGridVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridVC.swift; sourceTree = "<group>"; };
+		E77A6BCC29141981009DC36B /* SharpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpVC.swift; sourceTree = "<group>"; };
+		E77A6BCE291419D7009DC36B /* ShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVC.swift; sourceTree = "<group>"; };
+		E77A6BD0291419EC009DC36B /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		E77A6BD229147960009DC36B /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +136,14 @@
 		E7579C0528F6D095002CAB3E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E7579C3228F85A7C002CAB3E /* Preview.swift */,
+				E77A6BCC29141981009DC36B /* SharpVC.swift */,
+				E77A6BCE291419D7009DC36B /* ShopVC.swift */,
+				E77A6BD0291419EC009DC36B /* MoreVC.swift */,
+				E77A6BC829141663009DC36B /* KakaoTabBarController.swift */,
+				E77A6BCA2914194E009DC36B /* PhotoGridVC.swift */,
 				E7579C0928F6D3D9002CAB3E /* Scenes */,
-				E7579C2728F83902002CAB3E /* FriendList */,
-				E7579C3428F86CAF002CAB3E /* Profile */,
+				E7579C3228F85A7C002CAB3E /* Preview.swift */,
+				E7579BF428F6B358002CAB3E /* LaunchScreen.storyboard */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -144,7 +160,8 @@
 		E7579C0928F6D3D9002CAB3E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				E7579BF428F6B358002CAB3E /* LaunchScreen.storyboard */,
+				E7579C3428F86CAF002CAB3E /* Profile */,
+				E7579C2728F83902002CAB3E /* FriendList */,
 				E7579C0C28F6D442002CAB3E /* SignIn */,
 				E7579C0D28F6D44B002CAB3E /* SignUp */,
 				E7579C0E28F6D472002CAB3E /* Welcome */,
@@ -205,6 +222,7 @@
 				E7579C3928F877A7002CAB3E /* Model */,
 				E7579C2828F83925002CAB3E /* FriendListVC.swift */,
 				E7579C2A28F8392F002CAB3E /* FriendListView.swift */,
+				E77A6BD229147960009DC36B /* FriendTableViewCell.swift */,
 			);
 			path = FriendList;
 			sourceTree = "<group>";
@@ -317,9 +335,15 @@
 				E7579C2028F6D573002CAB3E /* SignInView.swift in Sources */,
 				E7579C1728F6D4FD002CAB3E /* UIView+.swift in Sources */,
 				E7579C2928F83925002CAB3E /* FriendListVC.swift in Sources */,
+				E77A6BCD29141981009DC36B /* SharpVC.swift in Sources */,
 				E7579BEA28F6B357002CAB3E /* AppDelegate.swift in Sources */,
 				E7579C3F28F90D93002CAB3E /* UIButton+.swift in Sources */,
+				E77A6BD329147960009DC36B /* FriendTableViewCell.swift in Sources */,
+				E77A6BC929141663009DC36B /* KakaoTabBarController.swift in Sources */,
+				E77A6BCB2914194E009DC36B /* PhotoGridVC.swift in Sources */,
+				E77A6BD1291419EC009DC36B /* MoreVC.swift in Sources */,
 				E7579C1428F6D4A5002CAB3E /* SignInVC.swift in Sources */,
+				E77A6BCF291419D7009DC36B /* ShopVC.swift in Sources */,
 				E7579C1D28F6D535002CAB3E /* BaseVC.swift in Sources */,
 				E7579C3328F85A7C002CAB3E /* Preview.swift in Sources */,
 				E7579C3628F86CC1002CAB3E /* ProfileView.swift in Sources */,
