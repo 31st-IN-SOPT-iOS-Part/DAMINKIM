@@ -24,6 +24,7 @@ final class PhotoGridVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         register()
+        setAddTarget()
     }
     
     private func register() {
@@ -31,6 +32,14 @@ final class PhotoGridVC: BaseVC {
         photoGridView.photoGridCollectionView.dataSource = self
         
         photoGridView.photoGridCollectionView.register(PhotoGridCollectionViewCell.self, forCellWithReuseIdentifier: PhotoGridCollectionViewCell.identifier)
+    }
+    
+    private func setAddTarget() {
+        photoGridView.closeModalButton.addTarget(self, action: #selector(closePhotoGraidView), for: .touchUpInside)
+    }
+    
+    @objc private func closePhotoGraidView() {
+        self.dismiss(animated: true)
     }
 }
 extension PhotoGridVC: UICollectionViewDataSource {
@@ -48,8 +57,8 @@ extension PhotoGridVC: UICollectionViewDataSource {
 extension PhotoGridVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screenWidth = UIScreen.main.bounds.width
-        let doubleCellWidth = screenWidth - photoGridView.kPhotoInset.left - photoGridView.kPhotoInset.right - photoGridView.kPhotoInterItemSpacing
-        return CGSize(width: doubleCellWidth / 2, height: 198)
+        let doubleCellWidth = screenWidth - photoGridView.kPhotoInset.left - photoGridView.kPhotoInset.right - photoGridView.kPhotoInterItemSpacing*2
+        return CGSize(width: doubleCellWidth / 3, height: 123)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

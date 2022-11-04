@@ -169,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				E77A6BD42914A268009DC36B /* Tabs */,
-				E7579C3428F86CAF002CAB3E /* Profile */,
 				E7579C0C28F6D442002CAB3E /* SignIn */,
 				E7579C0D28F6D44B002CAB3E /* SignUp */,
 				E7579C0E28F6D472002CAB3E /* Welcome */,
@@ -227,6 +226,7 @@
 		E7579C2728F83902002CAB3E /* FriendList */ = {
 			isa = PBXGroup;
 			children = (
+				E7579C3428F86CAF002CAB3E /* Profile */,
 				E7579C3928F877A7002CAB3E /* Model */,
 				E7579C2A28F8392F002CAB3E /* FriendListView.swift */,
 				E7579C2828F83925002CAB3E /* FriendListVC.swift */,

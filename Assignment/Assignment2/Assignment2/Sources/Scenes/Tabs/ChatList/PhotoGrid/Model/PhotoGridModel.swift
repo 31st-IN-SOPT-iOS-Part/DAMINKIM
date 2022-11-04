@@ -13,6 +13,7 @@ struct PhotoGridModel {
 
 extension PhotoGridModel {
     static var photoList: [PhotoGridModel] = [
+        PhotoGridModel(photoName: "galleryImage0"),
         PhotoGridModel(photoName: "galleryImage1"),
         PhotoGridModel(photoName: "galleryImage2"),
         PhotoGridModel(photoName: "galleryImage3"),
