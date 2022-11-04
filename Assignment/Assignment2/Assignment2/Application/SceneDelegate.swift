@@ -17,9 +17,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
             window.overrideUserInterfaceStyle = UIUserInterfaceStyle.light
             
-            let rootVC = SignInVC()
-
+//            let rootVC = SignInVC()
+            
+            let rootVC = KakaoTabbarController()
             let navigationController = UINavigationController(rootViewController: rootVC)
+            window.rootViewController = navigationController
             
             window.rootViewController = navigationController
             window.makeKeyAndVisible()
