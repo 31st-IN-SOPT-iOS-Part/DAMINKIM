@@ -22,7 +22,6 @@ final class FriendTableViewCell: UITableViewCell {
     }
     
     // MARK: - Properties
-    
     static let identifier = "FriendTableViewCell"
     
     private let profileContainerView = UIView()
@@ -38,7 +37,6 @@ final class FriendTableViewCell: UITableViewCell {
     }
     
     // MARK: - Function
-    
     func dataBind(model: ProfileModel) {
         profileImageView.image = UIImage(named: model.profileImageTitle)
         profileNameLabel.text = model.profileName
@@ -56,7 +54,7 @@ final class FriendTableViewCell: UITableViewCell {
         profileContainerView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.leading.equalToSuperview().offset(20)
-            $0.width.height.equalTo(44)
+            $0.width.equalTo(44)
         }
         
         profileImageView.snp.makeConstraints {

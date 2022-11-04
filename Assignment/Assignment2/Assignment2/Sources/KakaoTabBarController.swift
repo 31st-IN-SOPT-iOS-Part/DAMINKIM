@@ -30,7 +30,6 @@ class KakaoTabbarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("TabBar")
         self.view.backgroundColor = .white
         self.selectedIndex = defaultIndex
         self.setValue(kakaoTabbar, forKey: "tabBar")
@@ -48,7 +47,7 @@ extension KakaoTabbarController : UITabBarControllerDelegate {
         let friendNavigationController =  UINavigationController(rootViewController: friendViewController)
         friendNavigationController.navigationBar.isHidden = true
         
-        let chatViewController = PhotoGridVC()
+        let chatViewController = ChatListVC()
         let chatNavigationController = UINavigationController(rootViewController: chatViewController)
         chatNavigationController.navigationBar.isHidden = true
         

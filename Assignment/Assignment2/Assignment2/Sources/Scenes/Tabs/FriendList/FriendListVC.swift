@@ -31,6 +31,7 @@ final class FriendListVC: BaseVC {
     
     // MARK: - Function
     
+    //TODO: 현재 탭바컨트롤러를 루트뷰로 해놓아서 주석처리 나중에 로그인 뷰에서 진입시 루트뷰를 탭바컨트롤러로 재설정 필요
     /// login 뷰에서 진입시 friendList를 루트뷰로 재설정 해준 코드
 //    private func resetRootView() {
 //        let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
@@ -55,7 +56,13 @@ final class FriendListVC: BaseVC {
     }
 }
 
-extension FriendListVC: UITableViewDelegate, UITableViewDataSource {
+extension FriendListVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+}
+
+extension FriendListVC: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ProfileModel.friendList.count

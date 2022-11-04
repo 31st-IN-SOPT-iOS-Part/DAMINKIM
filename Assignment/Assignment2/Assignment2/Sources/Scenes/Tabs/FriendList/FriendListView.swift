@@ -26,7 +26,7 @@ final class FriendListView: BaseView {
     }
     
     private let underLineView = UIView().then {
-        $0.backgroundColor = .gray
+        $0.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
     }
     
     let myProfileImageButton = UIButton().then {
@@ -101,7 +101,7 @@ final class FriendListView: BaseView {
             $0.top.equalTo(underLineView.snp.bottom).offset(5)
             $0.leading.trailing.equalTo(safeAreaLayoutGuide)
             $0.bottom.equalToSuperview()
-            $0.height.equalTo(100 * ProfileModel.friendList.count)
+            $0.height.equalTo(70 * ProfileModel.friendList.count)
         }
         
     }
