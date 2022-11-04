@@ -19,12 +19,12 @@ final class ProfileView: BaseView {
     }
     
     lazy var profileImageButton = UIButton().then {
-        $0.setBackgroundImage(UIImage(named: ProfileModel.myProfileImageTitle), for: .normal)
+        $0.setBackgroundImage(UIImage(named: "MyProfileImage"), for: .normal)
         $0.contentMode = .scaleAspectFit
     }
     
     private let profileName = UILabel().then {
-        $0.text = ProfileModel.myProfileName
+        $0.text = "김솝트"
         $0.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 18)
         $0.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     }
