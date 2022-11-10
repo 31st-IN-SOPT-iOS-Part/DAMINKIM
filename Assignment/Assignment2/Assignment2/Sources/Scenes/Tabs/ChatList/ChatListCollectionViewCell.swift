@@ -1,19 +1,19 @@
 //
-//  ChatListTableViewCell.swift
+//  ChatListCollectionViewCell.swift
 //  Assignment2
 //
-//  Created by 김담인 on 2022/11/04.
+//  Created by 김담인 on 2022/11/11.
 //
 
 import UIKit
 import SnapKit
 import Then
 
-final class ChatListTableViewCell: UITableViewCell {
+class ChatListCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Initialization
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setupLayout()
     }
     
@@ -53,7 +53,7 @@ final class ChatListTableViewCell: UITableViewCell {
         
         chatRoomImageView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
-            $0.leading.equalToSuperview().offset(20)
+            $0.leading.equalToSuperview().offset(16)
             $0.width.equalTo(44)
         }
         

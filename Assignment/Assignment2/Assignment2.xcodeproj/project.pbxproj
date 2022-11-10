@@ -40,10 +40,10 @@
 		E77A6BD329147960009DC36B /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BD229147960009DC36B /* FriendTableViewCell.swift */; };
 		E77A6BDA2914A2DA009DC36B /* ChatListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BD92914A2DA009DC36B /* ChatListVC.swift */; };
 		E77A6BDC2914A2F4009DC36B /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BDB2914A2F4009DC36B /* ChatListView.swift */; };
-		E77A6BDE2914DD0A009DC36B /* ChatListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BDD2914DD0A009DC36B /* ChatListTableViewCell.swift */; };
 		E78F23822914FD5E000849C0 /* PhotoGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F23812914FD5E000849C0 /* PhotoGridView.swift */; };
 		E78F23852914FE06000849C0 /* PhotoGridModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F23842914FE06000849C0 /* PhotoGridModel.swift */; };
 		E78F2387291502B6000849C0 /* PhotoGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F2386291502B6000849C0 /* PhotoGridCollectionViewCell.swift */; };
+		E7CE254B291D627A006DA24C /* ChatListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE254A291D627A006DA24C /* ChatListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,10 +80,10 @@
 		E77A6BD229147960009DC36B /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		E77A6BD92914A2DA009DC36B /* ChatListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListVC.swift; sourceTree = "<group>"; };
 		E77A6BDB2914A2F4009DC36B /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
-		E77A6BDD2914DD0A009DC36B /* ChatListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTableViewCell.swift; sourceTree = "<group>"; };
 		E78F23812914FD5E000849C0 /* PhotoGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridView.swift; sourceTree = "<group>"; };
 		E78F23842914FE06000849C0 /* PhotoGridModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridModel.swift; sourceTree = "<group>"; };
 		E78F2386291502B6000849C0 /* PhotoGridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7CE254A291D627A006DA24C /* ChatListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,7 +277,7 @@
 			children = (
 				E77A6BDB2914A2F4009DC36B /* ChatListView.swift */,
 				E77A6BD92914A2DA009DC36B /* ChatListVC.swift */,
-				E77A6BDD2914DD0A009DC36B /* ChatListTableViewCell.swift */,
+				E7CE254A291D627A006DA24C /* ChatListCollectionViewCell.swift */,
 				E78F23802914FD3E000849C0 /* PhotoGrid */,
 			);
 			path = ChatList;
@@ -411,8 +411,8 @@
 				E7579C1728F6D4FD002CAB3E /* UIView+.swift in Sources */,
 				E7579C2928F83925002CAB3E /* FriendListVC.swift in Sources */,
 				E77A6BDC2914A2F4009DC36B /* ChatListView.swift in Sources */,
-				E77A6BDE2914DD0A009DC36B /* ChatListTableViewCell.swift in Sources */,
 				E77A6BCD29141981009DC36B /* SharpVC.swift in Sources */,
+				E7CE254B291D627A006DA24C /* ChatListCollectionViewCell.swift in Sources */,
 				E7579BEA28F6B357002CAB3E /* AppDelegate.swift in Sources */,
 				E7579C3F28F90D93002CAB3E /* UIButton+.swift in Sources */,
 				E77A6BD329147960009DC36B /* FriendTableViewCell.swift in Sources */,

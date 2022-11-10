@@ -25,10 +25,10 @@ class ChatListVC: BaseVC {
     
     // MARK: - Function
     private func register() {
-        chatListView.chatTableView.delegate = self
-        chatListView.chatTableView.dataSource = self
+        chatListView.chatCollectionView.delegate = self
+        chatListView.chatCollectionView.dataSource = self
         
-        chatListView.chatTableView.register(ChatListTableViewCell.self, forCellReuseIdentifier: ChatListTableViewCell.identifier)
+        chatListView.chatCollectionView.register(ChatListCollectionViewCell.self, forCellWithReuseIdentifier: ChatListCollectionViewCell.identifier)
     }
     
     private func setAddTarget() {
@@ -42,22 +42,36 @@ class ChatListVC: BaseVC {
     }
 
 }
-extension ChatListVC: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
-    }
-}
 
-extension ChatListVC: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+extension ChatListVC: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return ProfileModel.friendList.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let chatListCell = tableView.dequeueReusableCell(withIdentifier: ChatListTableViewCell.identifier, for: indexPath) as? ChatListTableViewCell else { return UITableViewCell() }
-        
-        chatListCell.dataBind(model: ProfileModel.friendList[indexPath.row])
-        return chatListCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let chatCell = collectionView.dequeueReusableCell(withReuseIdentifier: ChatListCollectionViewCell.identifier, for: indexPath) as? ChatListCollectionViewCell else {return UICollectionViewCell()}
+        chatCell.dataBind(model: ProfileModel.friendList[indexPath.item])
+        return chatCell
     }
 }
+
+extension ChatListVC: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenWidth = UIScreen.main.bounds.width
+        let doubleCellWidth = screenWidth - chatListView.kChatInset.left - chatListView.kChatInset.right - chatListView.kChatInterItemSpacing
+        return CGSize(width: doubleCellWidth, height: 50)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return chatListView.kChatLineSpacing
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return chatListView.kChatInterItemSpacing
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return chatListView.kChatInset
+    }
+}
+

@@ -38,7 +38,6 @@ final class PhotoGridView: BaseView {
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .clear
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.isScrollEnabled = true
         collectionView.showsVerticalScrollIndicator = false
         return collectionView
@@ -92,3 +91,4 @@ final class PhotoGridView: BaseView {
     }
     
 }
+

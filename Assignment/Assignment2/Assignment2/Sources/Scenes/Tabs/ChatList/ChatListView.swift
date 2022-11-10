@@ -41,18 +41,27 @@ final class ChatListView: BaseView {
     
     private let chatBannerButton = UIButton().then {
         $0.setBackgroundImage(UIImage(named: "chatTabBannerImage"), for: .normal)
-        
     }
     
-    lazy var chatTableView = UITableView().then {
-        $0.backgroundColor = .clear
-        $0.separatorStyle = .singleLine
-        $0.separatorColor = .black.withAlphaComponent(0.1)
-    }
+    lazy var chatCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.backgroundColor = .clear
+        collectionView.isScrollEnabled = true
+        collectionView.showsVerticalScrollIndicator = false
+        return collectionView
+    }()
+    
+    final let kChatInset: UIEdgeInsets = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
+    final let kChatLineSpacing: CGFloat = 0
+    final let kChatInterItemSpacing: CGFloat = 10
+    final let kCellHeight: CGFloat = 50
     
     // MARK: - Function
     override func setupView() {
-        self.addSubviews([headerView, chatBannerButton, chatTableView])
+        self.addSubviews([headerView, chatBannerButton, chatCollectionView])
         
         headerView.addSubViews([chattingButton, openChattingButton,addButton, settingButton])
         
@@ -93,12 +102,17 @@ final class ChatListView: BaseView {
             $0.height.equalTo(71)
         }
         
-        chatTableView.snp.makeConstraints {
+        chatCollectionView.snp.makeConstraints {
             $0.top.equalTo(chatBannerButton.snp.bottom).offset(20)
-            $0.leading.trailing.equalTo(safeAreaLayoutGuide)
+            $0.leading.trailing.equalToSuperview()
             $0.bottom.equalToSuperview()
             /// firiendList랑 같은 더미 사용
-            $0.height.equalTo(70 * ProfileModel.friendList.count)
+            $0.height.equalTo(calculateCellHeight())
         }
+    }
+    
+    private func calculateCellHeight() -> CGFloat {
+        let count = CGFloat(ProfileModel.friendList.count)
+        return count * kCellHeight + kChatLineSpacing + kChatInset.top + kChatInset.bottom
     }
 }
