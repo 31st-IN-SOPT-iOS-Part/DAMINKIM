@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class ChatListCollectionViewCell: UICollectionViewCell {
+final class ChatListCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Initialization
     override init(frame: CGRect) {

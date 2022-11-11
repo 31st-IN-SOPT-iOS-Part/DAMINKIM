@@ -31,17 +31,16 @@ final class PhotoGridView: BaseView {
         $0.titleLabel?.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 14)
         $0.setTitleColor(.black, for: .normal)
     }
-
-    lazy var photoGridCollectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
-        
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .clear
-        collectionView.isScrollEnabled = true
-        collectionView.showsVerticalScrollIndicator = false
-        return collectionView
-    }()
+    
+    let layout = UICollectionViewFlowLayout().then{
+        $0.scrollDirection = .vertical
+    }
+    
+    lazy var photoGridCollectionView = UICollectionView(frame: .zero, collectionViewLayout: layout).then {
+        $0.backgroundColor = .clear
+        $0.isScrollEnabled = true
+        $0.showsVerticalScrollIndicator = false
+    }
     
     // MARK: - constants
     final let kPhotoInset: UIEdgeInsets = UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)

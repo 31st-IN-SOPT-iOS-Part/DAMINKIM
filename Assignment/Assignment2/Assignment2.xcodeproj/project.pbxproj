@@ -44,6 +44,8 @@
 		E78F23852914FE06000849C0 /* PhotoGridModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F23842914FE06000849C0 /* PhotoGridModel.swift */; };
 		E78F2387291502B6000849C0 /* PhotoGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F2386291502B6000849C0 /* PhotoGridCollectionViewCell.swift */; };
 		E7CE254B291D627A006DA24C /* ChatListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE254A291D627A006DA24C /* ChatListCollectionViewCell.swift */; };
+		E7CE254D291E103C006DA24C /* ChatListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE254C291E103C006DA24C /* ChatListHeader.swift */; };
+		E7CE254F291E2288006DA24C /* FriendListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE254E291E2288006DA24C /* FriendListHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		E78F23842914FE06000849C0 /* PhotoGridModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridModel.swift; sourceTree = "<group>"; };
 		E78F2386291502B6000849C0 /* PhotoGridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridCollectionViewCell.swift; sourceTree = "<group>"; };
 		E7CE254A291D627A006DA24C /* ChatListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7CE254C291E103C006DA24C /* ChatListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListHeader.swift; sourceTree = "<group>"; };
+		E7CE254E291E2288006DA24C /* FriendListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +235,7 @@
 				E7579C2A28F8392F002CAB3E /* FriendListView.swift */,
 				E7579C2828F83925002CAB3E /* FriendListVC.swift */,
 				E77A6BD229147960009DC36B /* FriendTableViewCell.swift */,
+				E7CE254E291E2288006DA24C /* FriendListHeader.swift */,
 			);
 			path = FriendList;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				E77A6BDB2914A2F4009DC36B /* ChatListView.swift */,
 				E77A6BD92914A2DA009DC36B /* ChatListVC.swift */,
 				E7CE254A291D627A006DA24C /* ChatListCollectionViewCell.swift */,
+				E7CE254C291E103C006DA24C /* ChatListHeader.swift */,
 				E78F23802914FD3E000849C0 /* PhotoGrid */,
 			);
 			path = ChatList;
@@ -406,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7579C3128F85A38002CAB3E /* UIViewController+.swift in Sources */,
+				E7CE254D291E103C006DA24C /* ChatListHeader.swift in Sources */,
 				E78F23822914FD5E000849C0 /* PhotoGridView.swift in Sources */,
 				E7579C2028F6D573002CAB3E /* SignInView.swift in Sources */,
 				E7579C1728F6D4FD002CAB3E /* UIView+.swift in Sources */,
@@ -418,6 +425,7 @@
 				E77A6BD329147960009DC36B /* FriendTableViewCell.swift in Sources */,
 				E77A6BC929141663009DC36B /* KakaoTabBarController.swift in Sources */,
 				E77A6BCB2914194E009DC36B /* PhotoGridVC.swift in Sources */,
+				E7CE254F291E2288006DA24C /* FriendListHeader.swift in Sources */,
 				E77A6BD1291419EC009DC36B /* MoreVC.swift in Sources */,
 				E7579C1428F6D4A5002CAB3E /* SignInVC.swift in Sources */,
 				E77A6BCF291419D7009DC36B /* ShopVC.swift in Sources */,

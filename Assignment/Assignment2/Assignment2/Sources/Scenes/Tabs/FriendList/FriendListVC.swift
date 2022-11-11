@@ -13,6 +13,7 @@ final class FriendListVC: BaseVC {
     
     // MARK: - Properties
     private let friendListView = FriendListView()
+    private let friendListHeader = FriendListHeader()
     
     // MARK: - View Life Cycle
     override func loadView() {
@@ -39,7 +40,7 @@ final class FriendListVC: BaseVC {
 //    }
     
     private func setAddTarget() {
-        friendListView.myProfileImageButton.addTarget(self, action: #selector(presentToProfileVC), for: .touchUpInside)
+        friendListHeader.myProfileImageButton.addTarget(self, action: #selector(presentToProfileVC), for: .touchUpInside)
     }
     
     @objc private func presentToProfileVC() {
@@ -53,6 +54,8 @@ final class FriendListVC: BaseVC {
         friendListView.friendTableView.dataSource = self
         
         friendListView.friendTableView.register(FriendTableViewCell.self, forCellReuseIdentifier: FriendTableViewCell.identifier)
+        
+        friendListView.friendTableView.register(FriendListHeader.self, forHeaderFooterViewReuseIdentifier: FriendListHeader.identifier )
     }
 }
 
@@ -60,6 +63,19 @@ extension FriendListVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        print("header")
+        return 73
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = friendListView.friendTableView.dequeueReusableHeaderFooterView(withIdentifier: FriendListHeader.identifier)
+        
+        return header
+    }
+    
+    
 }
 
 extension FriendListVC: UITableViewDataSource {

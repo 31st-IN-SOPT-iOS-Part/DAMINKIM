@@ -13,6 +13,7 @@ final class ChatListView: BaseView {
     
     // MARK: - Properties
     private let headerView = UIView()
+    private let chatListHeader = ChatListHeader()
     
     private let chattingButton = UIButton().then{
         $0.setTitle("채팅", for: .normal)
@@ -61,7 +62,7 @@ final class ChatListView: BaseView {
     
     // MARK: - Function
     override func setupView() {
-        self.addSubviews([headerView, chatBannerButton, chatCollectionView])
+        self.addSubviews([headerView, chatCollectionView])
         
         headerView.addSubViews([chattingButton, openChattingButton,addButton, settingButton])
         
@@ -95,15 +96,15 @@ final class ChatListView: BaseView {
             $0.trailing.equalTo(settingButton.snp.leading).offset(-12)
         }
         
-        chatBannerButton.snp.makeConstraints {
-            $0.leading.equalTo(safeAreaLayoutGuide).offset(16)
-            $0.trailing.equalTo(safeAreaLayoutGuide).offset(-16)
-            $0.top.equalTo(headerView.snp.bottom)
-            $0.height.equalTo(71)
-        }
+//        chatBannerButton.snp.makeConstraints {
+//            $0.leading.equalTo(safeAreaLayoutGuide).offset(16)
+//            $0.trailing.equalTo(safeAreaLayoutGuide).offset(-16)
+//            $0.top.equalTo(headerView.snp.bottom)
+//            $0.height.equalTo(71)
+//        }
         
         chatCollectionView.snp.makeConstraints {
-            $0.top.equalTo(chatBannerButton.snp.bottom).offset(20)
+            $0.top.equalTo(headerView.snp.bottom)
             $0.leading.trailing.equalToSuperview()
             $0.bottom.equalToSuperview()
             /// firiendList랑 같은 더미 사용

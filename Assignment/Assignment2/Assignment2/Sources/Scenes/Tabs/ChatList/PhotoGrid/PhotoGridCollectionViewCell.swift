@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class PhotoGridCollectionViewCell: UICollectionViewCell {
+final class PhotoGridCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Initialization
     override init(frame: CGRect) {

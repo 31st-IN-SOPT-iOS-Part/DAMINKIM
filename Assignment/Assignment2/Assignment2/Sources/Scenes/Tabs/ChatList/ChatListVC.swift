@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChatListVC: BaseVC {
+final class ChatListVC: BaseVC {
     
     // MARK: - Properties
     private let chatListView = ChatListView()
@@ -29,6 +29,12 @@ class ChatListVC: BaseVC {
         chatListView.chatCollectionView.dataSource = self
         
         chatListView.chatCollectionView.register(ChatListCollectionViewCell.self, forCellWithReuseIdentifier: ChatListCollectionViewCell.identifier)
+        
+        chatListView.chatCollectionView.register(
+          ChatListHeader.self,
+          forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+          withReuseIdentifier: ChatListHeader.identifier
+        )
     }
     
     private func setAddTarget() {
@@ -53,6 +59,16 @@ extension ChatListVC: UICollectionViewDataSource {
         chatCell.dataBind(model: ProfileModel.friendList[indexPath.item])
         return chatCell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionView.elementKindSectionHeader {
+            let header =
+            chatListView.chatCollectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ChatListHeader.identifier, for: indexPath)
+            return header
+        }else {
+            return UICollectionReusableView()
+        }
+    }
 }
 
 extension ChatListVC: UICollectionViewDelegateFlowLayout {
@@ -72,6 +88,12 @@ extension ChatListVC: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return chatListView.kChatInset
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        let width: CGFloat = chatListView.chatCollectionView.frame.width
+        let height: CGFloat = 71
+        return CGSize(width: width, height: height)
     }
 }
 

@@ -25,28 +25,7 @@ final class FriendListView: BaseView {
         $0.imageView?.contentMode = .scaleAspectFill
     }
     
-    private let underLineView = UIView().then {
-        $0.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-    }
-    
-    let myProfileImageButton = UIButton().then {
-        $0.setBackgroundImage(UIImage(named:"MyProfileImage"), for: .normal)
-        $0.imageView?.contentMode = .scaleAspectFit
-    }
-    
-    private let myProfileName = UILabel().then {
-        $0.text = "김담인"
-        $0.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 16)
-        $0.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-    }
-    
-    private let myProfileStatusMessage = UILabel().then {
-        $0.text = "으ㅏ아아아"
-        $0.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 11)
-        $0.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-    }
-    
-    lazy var friendTableView = UITableView().then {
+    lazy var friendTableView = UITableView(frame: .zero, style: .grouped).then {
         $0.backgroundColor = .clear
         $0.separatorStyle = .singleLine
         $0.separatorColor = .black.withAlphaComponent(0.1)
@@ -54,7 +33,7 @@ final class FriendListView: BaseView {
     
     // MARK: - Function
     override func setupView() {
-        self.addSubviews([headerView, myProfileImageButton, myProfileName, myProfileStatusMessage, underLineView, friendTableView])
+        self.addSubviews([headerView, friendTableView])
         headerView.addSubviews([headerLabel, headerButton])
     }
     
@@ -74,31 +53,8 @@ final class FriendListView: BaseView {
             $0.centerY.equalToSuperview()
         }
         
-        myProfileImageButton.snp.makeConstraints {
-            $0.leading.equalTo(safeAreaLayoutGuide).offset(14)
-            $0.top.equalTo(headerView.snp.bottom).offset(20)
-            $0.width.height.equalTo(60)
-        }
-        
-        myProfileName.snp.makeConstraints {
-            $0.leading.equalTo(myProfileImageButton.snp.trailing).offset(11)
-            $0.top.equalTo(headerView.snp.bottom).offset(30)
-        }
-        
-        myProfileStatusMessage.snp.makeConstraints {
-            $0.leading.equalTo(myProfileImageButton.snp.trailing).offset(11)
-            $0.top.equalTo(myProfileName.snp.bottom).offset(10)
-        }
-        
-        underLineView.snp.makeConstraints {
-            $0.top.equalTo(myProfileImageButton.snp.bottom).offset(10)
-            $0.leading.equalTo(safeAreaLayoutGuide).offset(20)
-            $0.trailing.equalTo(safeAreaLayoutGuide).offset(-20)
-            $0.height.equalTo(1)
-        }
-        
         friendTableView.snp.makeConstraints {
-            $0.top.equalTo(underLineView.snp.bottom).offset(5)
+            $0.top.equalTo(headerView.snp.bottom)
             $0.leading.trailing.equalTo(safeAreaLayoutGuide)
             $0.bottom.equalToSuperview()
             $0.height.equalTo(70 * ProfileModel.friendList.count)
