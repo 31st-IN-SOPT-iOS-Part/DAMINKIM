@@ -32,6 +32,20 @@
 		E7579C3B28F877D5002CAB3E /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7579C3A28F877D5002CAB3E /* ProfileModel.swift */; };
 		E7579C3D28F8F73E002CAB3E /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7579C3C28F8F73E002CAB3E /* UIImage+.swift */; };
 		E7579C3F28F90D93002CAB3E /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7579C3E28F90D93002CAB3E /* UIButton+.swift */; };
+		E77A6BC929141663009DC36B /* KakaoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BC829141663009DC36B /* KakaoTabBarController.swift */; };
+		E77A6BCB2914194E009DC36B /* PhotoGridVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BCA2914194E009DC36B /* PhotoGridVC.swift */; };
+		E77A6BCD29141981009DC36B /* SharpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BCC29141981009DC36B /* SharpVC.swift */; };
+		E77A6BCF291419D7009DC36B /* ShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BCE291419D7009DC36B /* ShopVC.swift */; };
+		E77A6BD1291419EC009DC36B /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BD0291419EC009DC36B /* MoreVC.swift */; };
+		E77A6BD329147960009DC36B /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BD229147960009DC36B /* FriendTableViewCell.swift */; };
+		E77A6BDA2914A2DA009DC36B /* ChatListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BD92914A2DA009DC36B /* ChatListVC.swift */; };
+		E77A6BDC2914A2F4009DC36B /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77A6BDB2914A2F4009DC36B /* ChatListView.swift */; };
+		E78F23822914FD5E000849C0 /* PhotoGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F23812914FD5E000849C0 /* PhotoGridView.swift */; };
+		E78F23852914FE06000849C0 /* PhotoGridModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F23842914FE06000849C0 /* PhotoGridModel.swift */; };
+		E78F2387291502B6000849C0 /* PhotoGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F2386291502B6000849C0 /* PhotoGridCollectionViewCell.swift */; };
+		E7CE254B291D627A006DA24C /* ChatListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE254A291D627A006DA24C /* ChatListCollectionViewCell.swift */; };
+		E7CE254D291E103C006DA24C /* ChatListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE254C291E103C006DA24C /* ChatListHeader.swift */; };
+		E7CE254F291E2288006DA24C /* FriendListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE254E291E2288006DA24C /* FriendListHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +74,20 @@
 		E7579C3A28F877D5002CAB3E /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		E7579C3C28F8F73E002CAB3E /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		E7579C3E28F90D93002CAB3E /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		E77A6BC829141663009DC36B /* KakaoTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTabBarController.swift; sourceTree = "<group>"; };
+		E77A6BCA2914194E009DC36B /* PhotoGridVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridVC.swift; sourceTree = "<group>"; };
+		E77A6BCC29141981009DC36B /* SharpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpVC.swift; sourceTree = "<group>"; };
+		E77A6BCE291419D7009DC36B /* ShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVC.swift; sourceTree = "<group>"; };
+		E77A6BD0291419EC009DC36B /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		E77A6BD229147960009DC36B /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		E77A6BD92914A2DA009DC36B /* ChatListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListVC.swift; sourceTree = "<group>"; };
+		E77A6BDB2914A2F4009DC36B /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		E78F23812914FD5E000849C0 /* PhotoGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridView.swift; sourceTree = "<group>"; };
+		E78F23842914FE06000849C0 /* PhotoGridModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridModel.swift; sourceTree = "<group>"; };
+		E78F2386291502B6000849C0 /* PhotoGridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7CE254A291D627A006DA24C /* ChatListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7CE254C291E103C006DA24C /* ChatListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListHeader.swift; sourceTree = "<group>"; };
+		E7CE254E291E2288006DA24C /* FriendListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +152,10 @@
 		E7579C0528F6D095002CAB3E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E7579C3228F85A7C002CAB3E /* Preview.swift */,
+				E77A6BC829141663009DC36B /* KakaoTabBarController.swift */,
 				E7579C0928F6D3D9002CAB3E /* Scenes */,
-				E7579C2728F83902002CAB3E /* FriendList */,
-				E7579C3428F86CAF002CAB3E /* Profile */,
+				E7579C3228F85A7C002CAB3E /* Preview.swift */,
+				E7579BF428F6B358002CAB3E /* LaunchScreen.storyboard */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -144,7 +172,7 @@
 		E7579C0928F6D3D9002CAB3E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				E7579BF428F6B358002CAB3E /* LaunchScreen.storyboard */,
+				E77A6BD42914A268009DC36B /* Tabs */,
 				E7579C0C28F6D442002CAB3E /* SignIn */,
 				E7579C0D28F6D44B002CAB3E /* SignUp */,
 				E7579C0E28F6D472002CAB3E /* Welcome */,
@@ -202,9 +230,12 @@
 		E7579C2728F83902002CAB3E /* FriendList */ = {
 			isa = PBXGroup;
 			children = (
+				E7579C3428F86CAF002CAB3E /* Profile */,
 				E7579C3928F877A7002CAB3E /* Model */,
-				E7579C2828F83925002CAB3E /* FriendListVC.swift */,
 				E7579C2A28F8392F002CAB3E /* FriendListView.swift */,
+				E7579C2828F83925002CAB3E /* FriendListVC.swift */,
+				E77A6BD229147960009DC36B /* FriendTableViewCell.swift */,
+				E7CE254E291E2288006DA24C /* FriendListHeader.swift */,
 			);
 			path = FriendList;
 			sourceTree = "<group>";
@@ -230,6 +261,73 @@
 			isa = PBXGroup;
 			children = (
 				E7579C3A28F877D5002CAB3E /* ProfileModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E77A6BD42914A268009DC36B /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				E7579C2728F83902002CAB3E /* FriendList */,
+				E77A6BD52914A285009DC36B /* ChatList */,
+				E77A6BD82914A29B009DC36B /* Sharp */,
+				E77A6BD72914A296009DC36B /* Shop */,
+				E77A6BD62914A290009DC36B /* More */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		E77A6BD52914A285009DC36B /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				E77A6BDB2914A2F4009DC36B /* ChatListView.swift */,
+				E77A6BD92914A2DA009DC36B /* ChatListVC.swift */,
+				E7CE254A291D627A006DA24C /* ChatListCollectionViewCell.swift */,
+				E7CE254C291E103C006DA24C /* ChatListHeader.swift */,
+				E78F23802914FD3E000849C0 /* PhotoGrid */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		E77A6BD62914A290009DC36B /* More */ = {
+			isa = PBXGroup;
+			children = (
+				E77A6BD0291419EC009DC36B /* MoreVC.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		E77A6BD72914A296009DC36B /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				E77A6BCE291419D7009DC36B /* ShopVC.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		E77A6BD82914A29B009DC36B /* Sharp */ = {
+			isa = PBXGroup;
+			children = (
+				E77A6BCC29141981009DC36B /* SharpVC.swift */,
+			);
+			path = Sharp;
+			sourceTree = "<group>";
+		};
+		E78F23802914FD3E000849C0 /* PhotoGrid */ = {
+			isa = PBXGroup;
+			children = (
+				E78F23832914FDF5000849C0 /* Model */,
+				E77A6BCA2914194E009DC36B /* PhotoGridVC.swift */,
+				E78F23812914FD5E000849C0 /* PhotoGridView.swift */,
+				E78F2386291502B6000849C0 /* PhotoGridCollectionViewCell.swift */,
+			);
+			path = PhotoGrid;
+			sourceTree = "<group>";
+		};
+		E78F23832914FDF5000849C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E78F23842914FE06000849C0 /* PhotoGridModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,19 +412,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7579C3128F85A38002CAB3E /* UIViewController+.swift in Sources */,
+				E7CE254D291E103C006DA24C /* ChatListHeader.swift in Sources */,
+				E78F23822914FD5E000849C0 /* PhotoGridView.swift in Sources */,
 				E7579C2028F6D573002CAB3E /* SignInView.swift in Sources */,
 				E7579C1728F6D4FD002CAB3E /* UIView+.swift in Sources */,
 				E7579C2928F83925002CAB3E /* FriendListVC.swift in Sources */,
+				E77A6BDC2914A2F4009DC36B /* ChatListView.swift in Sources */,
+				E77A6BCD29141981009DC36B /* SharpVC.swift in Sources */,
+				E7CE254B291D627A006DA24C /* ChatListCollectionViewCell.swift in Sources */,
 				E7579BEA28F6B357002CAB3E /* AppDelegate.swift in Sources */,
 				E7579C3F28F90D93002CAB3E /* UIButton+.swift in Sources */,
+				E77A6BD329147960009DC36B /* FriendTableViewCell.swift in Sources */,
+				E77A6BC929141663009DC36B /* KakaoTabBarController.swift in Sources */,
+				E77A6BCB2914194E009DC36B /* PhotoGridVC.swift in Sources */,
+				E7CE254F291E2288006DA24C /* FriendListHeader.swift in Sources */,
+				E77A6BD1291419EC009DC36B /* MoreVC.swift in Sources */,
 				E7579C1428F6D4A5002CAB3E /* SignInVC.swift in Sources */,
+				E77A6BCF291419D7009DC36B /* ShopVC.swift in Sources */,
 				E7579C1D28F6D535002CAB3E /* BaseVC.swift in Sources */,
 				E7579C3328F85A7C002CAB3E /* Preview.swift in Sources */,
 				E7579C3628F86CC1002CAB3E /* ProfileView.swift in Sources */,
 				E7579C2428F80F3A002CAB3E /* SingUpView.swift in Sources */,
 				E7579C2228F7F9E3002CAB3E /* WelcomeView.swift in Sources */,
+				E78F23852914FE06000849C0 /* PhotoGridModel.swift in Sources */,
+				E77A6BDA2914A2DA009DC36B /* ChatListVC.swift in Sources */,
 				E7579BEC28F6B357002CAB3E /* SceneDelegate.swift in Sources */,
 				E7579C1A28F6D516002CAB3E /* BaseView.swift in Sources */,
+				E78F2387291502B6000849C0 /* PhotoGridCollectionViewCell.swift in Sources */,
 				E7579C3828F86CD2002CAB3E /* ProfileVC.swift in Sources */,
 				E7579C1228F6D498002CAB3E /* SignUpVC.swift in Sources */,
 				E7579C2B28F8392F002CAB3E /* FriendListView.swift in Sources */,

@@ -43,11 +43,11 @@ final class SignInView: BaseView {
         $0.clearButtonMode = .whileEditing
     }
     
-    let idUnderlineVIew = UIView().then {
+    let idUnderlineView = UIView().then {
         $0.backgroundColor = .systemGray
     }
     
-    let passwordUnderlineVIew = UIView().then {
+    let passwordUnderlineView = UIView().then {
         $0.backgroundColor = .systemGray
     }
     
@@ -73,7 +73,7 @@ final class SignInView: BaseView {
     
     // MARK: - Function
     override func setupView() {
-        [headerTitle, headerDiscription, idTextField, idUnderlineVIew, passwordTextField, passwordUnderlineVIew, loginButton, signUpButton, findAccontInfo].forEach {
+        [headerTitle, headerDiscription, idTextField, idUnderlineView, passwordTextField, passwordUnderlineView, loginButton, signUpButton, findAccontInfo].forEach {
             addSubview($0)
         }
     }
@@ -97,18 +97,18 @@ final class SignInView: BaseView {
             $0.leading.trailing.equalTo(safeAreaLayoutGuide).inset(15)
         }
         
-        idUnderlineVIew.snp.makeConstraints {
+        idUnderlineView.snp.makeConstraints {
             $0.top.equalTo(idTextField.snp.bottom).offset(10)
             $0.leading.trailing.equalTo(safeAreaLayoutGuide).inset(15)
             $0.height.equalTo(1)
         }
         
         passwordTextField.snp.makeConstraints {
-            $0.top.equalTo(idUnderlineVIew.snp.bottom).offset(20)
+            $0.top.equalTo(idUnderlineView.snp.bottom).offset(20)
             $0.leading.trailing.equalTo(safeAreaLayoutGuide).inset(15)
         }
         
-        passwordUnderlineVIew.snp.makeConstraints {
+        passwordUnderlineView.snp.makeConstraints {
             $0.top.equalTo(passwordTextField.snp.bottom).offset(10)
             $0.leading.trailing.equalTo(safeAreaLayoutGuide).inset(10)
             $0.height.equalTo(1)
@@ -116,7 +116,7 @@ final class SignInView: BaseView {
         
         // Bottom Button
         loginButton.snp.makeConstraints {
-            $0.top.equalTo(passwordUnderlineVIew.snp.bottom).offset(30)
+            $0.top.equalTo(passwordUnderlineView.snp.bottom).offset(30)
             $0.leading.trailing.equalTo(safeAreaLayoutGuide).inset(15)
             $0.height.equalTo(40)
         }
